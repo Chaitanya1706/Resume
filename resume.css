@@ -57,22 +57,46 @@ body{
      top: -30px;
 }
 
-.social-list{
-    display: inline-block;
+
+.social-list {
     font-size: 1.3rem;
     list-style: none;
     margin-top: 4px;
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: center;
+}
+
+.social-list li {
+    position: relative;
+    margin: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    /* border: 2px solid red; */
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.social-list li a{
+    position: absolute;
+    top: 8px;
 }
 
 .social-list a{
+    height: fit-content;
+    width: fit-content;
     text-shadow: rgba(230,196,196,0.3);
     /* background-color: white; */
     color: white;
-    border-radius: 50%;
+    
 }
 
-.social-list li a:hover{
+.social-list li:hover{
     box-shadow: 0px 0px 4px 6px white;
+    border-radius: 50%;
     /* border: 2px solid white; */
 
 }
